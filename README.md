@@ -14,7 +14,7 @@ Requires [Kepler 2.4 or higher][1] updated with latest modules
 Building
 ========
 
-None required, simply load **src/ncmirdataimport.kar** via [Kepler][1]
+None required, simply load **src/chmtrainingdataset.kar** via [Kepler][1]
 
 Testing
 =======
