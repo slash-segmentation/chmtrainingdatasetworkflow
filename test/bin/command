@@ -19,11 +19,11 @@ declare stdOut=`echo $task | cut -d "," -f 2`
 declare stdErr=`echo $task | cut -d "," -f 3`
 declare cmd=`echo $task | cut -d "," -f 4`
 if [ -n "$stdOut" ] ; then
-  echo $stdOut
+  echo -e $stdOut
 fi
 
 if [ -n "$stdErr" ] ; then
-  echo $stdErr 1>&2
+  echo -e $stdErr 1>&2
 fi
 
 if [ -n "$cmd" ] ; then
