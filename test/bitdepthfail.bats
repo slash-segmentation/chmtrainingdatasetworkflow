@@ -46,7 +46,7 @@ load test_helper
   cat "$THE_TMP/$README_TXT"
 
   [ "${lines[0]}" == "simple.error.message=One or more images are not 8bit" ]
-  [ "${lines[1]}" == "detailed.error.message=Got a depth of:  7-bit and std err is: " ]
+  [ "${lines[1]}" == "detailed.error.message=Got a depth of:  7-bit8-bit and std err is: " ]
 
 }
 

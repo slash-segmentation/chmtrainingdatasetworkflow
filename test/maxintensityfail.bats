@@ -44,10 +44,10 @@ load test_helper
   # Check output of workflow failed txt file
   run cat "$THE_TMP/$WORKFLOW_FAILED_TXT"
   [ "$status" -eq 0 ]
-
+  echo "::${lines[0]}::"
   [ "${lines[0]}" == "simple.error.message=One or more label image files has a max intensity greater then 1" ]
   echo ":${lines[1]}:"
-  [ "${lines[1]}" == "detailed.error.message=Got a max intensity of 2 and stderr is : " ]
+  [ "${lines[1]}" == "detailed.error.message=Expected 1, but got 12 and stderr is : " ]
 
 }
 

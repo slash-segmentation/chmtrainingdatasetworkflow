@@ -40,7 +40,8 @@ load test_helper
   [ "$status" -eq 0 ]
   cat "$THE_TMP/$WORKFLOW_FAILED_TXT"
   [ "${lines[0]}" == "simple.error.message=One or more images do not have dimension of 500x500" ]
-  [[ "${lines[1]}" == "detailed.error.message=Error running identify : "* ]]
+  echo ":${lines[1]}:"
+  [[ "${lines[1]}" == "detailed.error.message=identify returned these dimensions :  and this for error : identify: Improper"* ]]
 
 }
 
