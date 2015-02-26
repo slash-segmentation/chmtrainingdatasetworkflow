@@ -18,7 +18,12 @@ load test_helper
   echo "hi" > "$THE_TMP/fakewf/labels/1.png"
   echo "hi" > "$THE_TMP/fakewf/labels/2.png"
 
-  echo "0,images/001.png PNG 500x500 17387x17422+7934+7350 8-bit PseudoClass 256c 203kb\\nimages/002.png[1] PNG 500x500 17387x17422+10764+13750 8-bit PseudoClass 256c 200kb\\nlabels/001.png[2] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.09kb\\nlabels/002.png[3] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.34kb,," > "$THE_TMP/bin/command.tasks"
+ 
+  echo "0,,," > "$THE_TMP/bin/command.tasks"
+
+  echo "0,images/001.png PNG 500x500 17387x17422+7934+7350 8-bit PseudoClass 256c 203kb\\nimages/002.png[1] PNG 500x500 17387x17422+10764+13750 8-bit PseudoClass 256c 200kb\\nlabels/001.png[2] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.09kb\\nlabels/002.png[3] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.34kb,," >> "$THE_TMP/bin/command.tasks"
+
+  echo "0,images/001.png PNG 500x500 17387x17422+7934+7350 8-bit PseudoClass 256c 203kb\\nimages/002.png[1] PNG 500x500 17387x17422+10764+13750 8-bit PseudoClass 256c 200kb\\nlabels/001.png[2] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.09kb\\nlabels/002.png[3] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.34kb,," >> "$THE_TMP/bin/command.tasks"
 
   echo "0,images/001.png PNG 500x500 17387x17422+7934+7350 8-bit PseudoClass 256c 203kb\\nimages/002.png[1] PNG 500x500 17387x17422+10764+13750 8-bit PseudoClass 256c 200kb\\nlabels/001.png[2] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.09kb\\nlabels/002.png[3] PNG 500x500 500x500+0+0 8-bit PseudoClass 256c 3.34kb,," >> "$THE_TMP/bin/command.tasks"
   echo "0,Image: labels/001.png\\n  Format: PNG (Portable Network Graphics)\\n        max: 1 (0.00392157)\\n  Histogram:\\nImage: labels/002.png\\n  Format: PNG (Portable Network Graphics)\\n        max: 2 (0.00392157)\\n  Histogram:\\n,," >> "$THE_TMP/bin/command.tasks"
