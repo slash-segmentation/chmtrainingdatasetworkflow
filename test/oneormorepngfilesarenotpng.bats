@@ -41,7 +41,7 @@ load test_helper
   cat "$THE_TMP/$WORKFLOW_FAILED_TXT"
   [ "${lines[0]}" == "simple.error.message=Unable to run identify on images to verify they are images" ]
   echo ":${lines[1]}:"
-  [[ "${lines[1]}" == "detailed.error.message=Error running identify : identify: Improper"* ]]
+  [[ "${lines[1]}" == "detailed.error.message=Error running identify : identify:"*"mproper"* ]]
 
 }
 
